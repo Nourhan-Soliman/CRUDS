@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+        <h2>crud</h2>
+        <p>crud managment system</p>
+        </div>
+
+        <div class="inputs">
+        <input type="text" id="title" placeholder="title">
+        <div class="price">
+            <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+            <input onkeyup="getTotal()"  type="number" id="taxes" placeholder="taxes">
+            <input onkeyup="getTotal()"  type="number" id="ads" placeholder="ads">
+            <input onkeyup="getTotal()"  type="number" id="discount" placeholder="Discount">
+            <small id="total"></small>
+        </div>
+        <input type="number" id="count" placeholder="count">
+        <input type="text" id="category" placeholder="category">
+        <button id="submit">Creat</button>
+        </div>
+
+        <div class="outputs">
+        <div class="searchBlock">
+            <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="Search">
+            <div class="btnsearch">
+                <button onclick="getsearchmood(this.id)" id="searchtitle" >Search By Title</button>
+                <button onclick="getsearchmood(this.id)" id="searchcatogry">Search By Category</button>
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <th>id</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Taxes</th>
+                <th>Ads</th>
+                <th>Discount</th>
+                <th>Total</th>
+                <th>Category</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+            <tbody id="tbody">
+            
+            </tbody>
+             </table>
+            
+        </div>
+
+    </div>
+        <div id="deletAll">
+            
+        </div>
+
+</body>
+<script src="./main.js"></script>
+</html>

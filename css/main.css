@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #2b2b2b, #1c1c1c);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+.crud {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    height: 100vh;
+
+}
+
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #111;
+    margin: 8px 0;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    background: #000;
+    transform: scale(1.05);
+}
+
+.price input {
+    width: 20%;
+}
+
+#total {
+    background-color: #a00d02;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#total::before {
+    content: "Total: ";
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    margin: 8px 0px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #3498db;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #2980b9;
+    letter-spacing: 1px;
+}
+
+#deletAll {
+    margin: 20px 0;
+}
+
+.btnsearch {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnsearch button {
+    width: 45%;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    border-collapse: collapse;
+}
+
+table th {
+    text-transform: uppercase;
+    border-bottom: 1px solid #444;
+    padding: 10px;
+    background-color: #444;
+}
+
+th, td {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #333;
+}
+
+#deletall {
+    margin: 5px 0;
+}
